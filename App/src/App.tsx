@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import { PersonalInfoForm, Home } from "./layout/layout"
+import { PersonalInfoForm, Home, PlanForm, AddOns, Summary, ThankYou } from "./layout/layout"
 
 function App() {
 
@@ -8,6 +8,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />}>
           <Route index element={<PersonalInfoForm />} />
+          <Route path="select-plan" element={<PlanForm />} />
+          <Route path="add-ons" element={<AddOns />} />
+          <Route path="summary" element={<Summary />} />
+          <Route path="thank-you" element={<ThankYou />} />
         </Route>
       </Routes>
     </div>

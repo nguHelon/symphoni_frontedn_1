@@ -4,7 +4,7 @@ import { create } from "zustand";
 type userInfoType = {
     name: string,
     email: string,
-    phone: string
+    number: string
 }
 
 type planType = {
@@ -31,11 +31,13 @@ type actions = {
     setUserInfo: (userInfo: userInfoType) => void,
     setPlanDuration: (planDuration: planDurationType) => void,
     setPlan: (plan: planType) => void,
-    setAddOns: (addOns: addOnsType) => void
+    setAddOns: (addOns: addOnsType[]) => void,
+    emptyPlanState: () => void,
+    emptyAddOnsState: () => void
 }
 
 const useFormStore = create<formStore & actions>((set) => ({
-    userInfo: {name: "", email: "", phone: ""},
+    userInfo: {name: "", email: "", number: ""},
     planDuration: "monthly",
     plan: {planName: "", price: ""},
     addOns: [
@@ -46,20 +48,34 @@ const useFormStore = create<formStore & actions>((set) => ({
     ],
     setUserInfo: (userInfo) => set((state) => ({
         userInfo: {
-            ...state.userInfo, userInfo
+            ...state.userInfo, ...userInfo
         }
     })),
-    setPlanDuration: (planDuration) => set(() => ({ planDuration: planDuration })),
+    setPlanDuration: (planDuration: planDurationType) => set(() => ({ planDuration: planDuration })),
     setPlan: (plan) => set((state) => ({ 
         plan: {
-            ...state.plan, plan
+            ...state.plan, ...plan
         }
     })),
-    setAddOns: (addOns) => set((state) => ({
+    setAddOns: (addOn: addOnsType[]) => set((state) => ({
         addOns: [
-            ...state.addOns, addOns
+            ...state.addOns, ...addOn
         ]
-    }))
+    })),
+    emptyAddOnsState: () => set({
+        addOns: [
+            {
+                addOnName: "",
+                price: ""
+            }
+        ]
+    }),
+    emptyPlanState: () => set({
+        plan: {
+            planName: "",
+            price: ""
+        }
+    })
 }))
 
 export default useFormStore;

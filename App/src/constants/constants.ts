@@ -62,7 +62,7 @@ const layoutIntro: layoutIntroType[] = [
         description: "Add-ons help enhance your gaming experience."
     },
     {
-        name: "finish",
+        name: "summary",
         title: "Finishing up",
         description: "Double-check everything looks OK before confirming."
     }
