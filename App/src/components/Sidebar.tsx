@@ -18,7 +18,7 @@ const Sidebar = () => {
   }
 
   return (
-    <div style={{backgroundImage: `url(${bgSidebarDesktop})`}} className={`bg-cover bg-center flex-none w-full ss:w-[32%] ss:h-full rounded-[18px] p-5 bg-[url("${bgSidebarDesktop}")]`}>
+    <div style={{backgroundImage: `url(${bgSidebarDesktop})`}} className={`bg-cover bg-center flex-none w-full ss:w-[32%] ss:h-full rounded-[18px] p-5`}>
         <div className="flex flex-row justify-center ss:justify-normal space-x-5 ss:space-x-0 ss:flex-col ss:space-y-5">
             {
                 links.map((link, i) => (
