@@ -8,3 +8,7 @@
   scroll-behavior: smooth;
   font-family: Ubuntu;
 }
+
+.bgSidebarDesktop {
+  background-image: url("./assets//images/bg-sidebar-desktop.svg");
+}
