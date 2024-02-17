@@ -87,7 +87,7 @@ const CheckInput = ({title, description, addOnPricePerDuration, checked, setAddO
 const AddOns = () => {
     const navigate = useNavigate();
     const intro = layoutIntro.filter((intro) => intro.name === "addOns" )[0];
-    const { setAddOns, planDuration, addOns } = useFormStore()
+    const { setAddOns, planDuration } = useFormStore()
     const [addOnsState, setAddOnsState] = useState<addOnsType[]>(addOnsData);
 
     const handleSubmit = (addOns: addOnsType[]) => {

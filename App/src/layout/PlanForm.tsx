@@ -46,7 +46,7 @@ const plansData: plansType[] = [
 const PlanForm = () => {
   const navigate = useNavigate();
   const intro = layoutIntro.filter((intro) => intro.name == "plan")[0];
-  const { setPlan, setPlanDuration, planDuration, plan } = useFormStore()
+  const { setPlan, setPlanDuration, planDuration } = useFormStore()
   const [Error, setError] = useState<boolean>(false);
   const [plans, setPlans] = useState<plansType[]>(plansData);
   const [isChecked, setIsChecked] = useState<boolean>(false);
