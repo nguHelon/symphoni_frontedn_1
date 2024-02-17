@@ -18,7 +18,7 @@ const name_validation: validatonType = {
     label: 'name',
     type: 'text',
     id: 'name',
-    placeholder: 'write your name ...',
+    placeholder: 'e.g. Stephen King',
     validation: {
       required: {
         value: true,
@@ -36,7 +36,7 @@ const email_validation: validatonType = {
     label: 'email address',
     type: 'email',
     id: 'email',
-    placeholder: 'write a random email address',
+    placeholder: 'e.g. stephenking@lorem.com',
     validation: {
       required: {
         value: true,
@@ -54,7 +54,7 @@ const num_validation: validatonType = {
     label: 'phone number',
     type: 'number',
     id: 'num',
-    placeholder: 'write a random number',
+    placeholder: 'e.g. +1 234 567 890',
     validation: {
       required: {
         value: true,

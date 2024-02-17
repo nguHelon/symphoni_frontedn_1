@@ -1,18 +1,12 @@
-# Symphoni Social frontend coding interview challenge 1 - Multi-step form
+# Symphoni Social frontend coding interview challenge 1 - Multi-step form solution
 
-![Design preview for the Multi-step form coding challenge](./design/desktop-preview.jpg)
+This is a solution to the Multi-step form challenge of Symphoni Social.
 
-## Welcome! 👋
+## Overview
 
-Thanks for checking out this Symphoni Social front-end coding challenge. Please clone this repository and ensure you follow the instructions carefully. This challenge aims to evaluate your file structure, knowledge of components, and state management (ps: don't forget to like and follow 😂).
+### The challenge
 
-**To do this challenge, you need a good understanding of React.js, TypeScript, Tailwind CSS, and Zustand.**
-
-## The challenge
-
-Your challenge is to build out this multi-step form and make it look as close to the design as possible.
-
-Your users should be able to:
+Users should be able to:
 
 - Complete each step of the sequence
 - Go back to a previous step to update their selections
@@ -24,45 +18,62 @@ Your users should be able to:
   - The email address is not formatted correctly
   - A step is submitted, but no selection has been made
 
-If you need support during the challenge, feel free to ask questions to your recruter.
+### Screenshot
 
-## Where to find everything
+- Below is a screenshot showing validation messages
+  ![Solution Screenshot](./design_screenshots/Screenshot%201.png)
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+- Below is a screenshot showing an error message when a user doesn't choose a plan
+  ![Solution Screenshot](./design_screenshots/Screenshot%202.png)
 
-All the required assets for this project are in the `/assets` folder. The images are already exported for the correct screen size and optimized.
+- Below is a screenshot of a selected plan
+  ![Solution Screenshot](./design_screenshots/Screenshot%203.png)
 
-We also include variable and static font files for the required fonts for this project. You can choose to either link to Google Fonts or use the local font files to host the fonts yourself.
+- Below is a screenshot of multiple add - ons selection
+  ![Solution Screenshot](./design_screenshots/Screenshot%204.png)
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+- Below is a screenshot displaying the overall choices of the user
+  ![Solution Screenshot](./design_screenshots/Screenshot%205.png)
 
-## Building your project
+- Below is a screenshot displaying a thank you message on confirmation
+  ![Solution Screenshot](./design_screenshots/Screenshot%206.png)
 
-Feel free to use any workflow that you feel comfortable with.
+### Links
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/).
-2. Configure your repository to publish your code to a web address.
+- GitHub Solution URL: [https://github.com/nguHelon/symphoni_frontend_1](https://github.com/nguHelon/symphoni_frontend_1)
+- Live Site URL: [https://symphoni-multi-step-solution.netlify.app/](https://symphoni-multi-step-solution.netlify.app/)
 
-## Deploying your project
+## My process
 
-Our recommended hosts are:
+### Built with
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+- React Router Dom - For seamless Navigation
+- Tailwind CSS - CSS Utility library
+- Zustand - State management library
+- TypeScript - To add Type Safety features
+- React Hook Form - For Form Validation
+- React - JS library
 
-## Create a custom `README.md`
+### What I learned
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+1. Zustand State Management:
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`.
+- I learned how to efficiently manage state using Zustand, leveraging a single store setup and custom hooks for seamless state updates and access.
 
-## Submitting your solution
+2. React Hook Form for Form Validation:
 
-Submit your solution on the platform for the recruiters to see. If you're looking for feedback, be sure to ask specific and detailed questions when submitting it.
+- I learned how to streamline form validation with React Hook Form, employing its lightweight API to set up validation rules and provide real-time feedback for improved user interaction.
 
-## Got feedback for us?
+### Continued development
 
-We love receiving feedback! We're always looking to improve our recruitment process. So if you have anything you'd like to mention, please email jobs@symphonisocial.com or contact 677606169.
+I plan to continue refining my skills in React and it's useful library. Without forgetting to increase my skillset and my overall efficiency in the stack.
 
-**Have fun building!** 🚀
+### Useful resources
+
+- [Zustand Documentation](https://docs.pmnd.rs/zustand/getting-started/introduction) - Documentation and examples for Zustand state management library.
+- [React Documentation](https://reactjs.org/docs/getting-started.html) - Official documentation for React.
+- [React hook form Documentation](https://react-hook-form.com/get-started) - Official documentation for React.
+
+## Author
+
+- [Ngu Helon](https://github.com/nguHelon)
