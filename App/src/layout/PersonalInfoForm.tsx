@@ -24,8 +24,6 @@ const PersonalInfoForm = () => {
     setUserInfo(data);
     navigate("/select-plan");
   })
-  
-  console.log(userInfo)
 
   return (
     <FormProvider {...methods}>

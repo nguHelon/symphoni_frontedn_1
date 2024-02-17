@@ -105,8 +105,6 @@ const AddOns = () => {
         navigate("/summary");
     }
 
-    console.log(addOns);
-
 
   return (
     <div className="h-auto w-full bg-white ss:w-4/6 py-10 px-6 ss:px-14 rounded-xl">
