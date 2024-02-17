@@ -122,7 +122,7 @@ const PlanForm = () => {
                 </div>
                 <span className={` font-semibold ${ isChecked == false ? "text-CoolGray" : "text-MarineBlue"}`}>Yearly</span>
             </div>
-            <div className="w-full mt-14 flex justify-between items-center">
+            <div className="w-full mt-2 flex justify-between items-center">
                 <Link to="/">
                     <button className="text-CoolGray font-bold hover:text-MarineBlue mt-10">Go Back</button>
                 </Link>
